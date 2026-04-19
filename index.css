@@ -1,0 +1,15 @@
+/* Чтобы padding и border не ломали размеры элементов. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Базовые стили страницы. */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}

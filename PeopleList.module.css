@@ -1,0 +1,77 @@
+/* Внешний контейнер списка пользователей. */
+.wrapper {
+  max-width: 500px;
+  margin: 20px auto 0;
+}
+
+/* Сам список пользователей. */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+/* Одна строка пользователя. */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Убираем границу у последнего элемента списка. */
+.row:last-child {
+  border-bottom: none;
+}
+
+/* Затемнённый фон под модальным окном. */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Само модальное окно. */
+.dialog {
+  background: #fff;
+  border-radius: 8px;
+  width: 340px;
+  overflow: hidden;
+}
+
+/* Заголовок модального окна. */
+.dialogTitle {
+  margin: 0;
+  padding: 14px 20px;
+  font-size: 16px;
+  background: #3a7bd5;
+  color: #fff;
+}
+
+/* Основной текст модального окна. */
+.dialogText {
+  margin: 0;
+  padding: 18px 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Контейнер для кнопок внизу модального окна. */
+.dialogActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 0 20px 14px;
+}

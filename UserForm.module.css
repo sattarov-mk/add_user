@@ -1,0 +1,39 @@
+/* Основной контейнер формы. */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Стили для label внутри блока поля. */
+.field label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Общие стили для инпутов внутри блока поля. */
+.field input {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+/* Эффект фокуса, чтобы пользователь видел активное поле. */
+.field input:focus {
+  border-color: #3a7bd5;
+}
+
+/* Сообщение об ошибке валидации. */
+.error {
+  margin: 0;
+  color: #b42318;
+  font-size: 14px;
+  font-weight: 500;
+}

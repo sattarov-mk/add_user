@@ -1,0 +1,9 @@
+/* Универсальная карточка для формы и других блоков. */
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
