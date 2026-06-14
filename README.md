@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+# User Management App 👥
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application for managing users with validation and deletion confirmation.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* Add new users
+* Input validation
+* Display a list of users
+* Delete users with confirmation modal
+* Reusable UI components
+* Component-based architecture
+* Responsive and clean interface
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* React 19
+* JavaScript (ES6+)
+* CSS Modules
+* Create React App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```text
+src/
+├── components/
+│   ├── UserForm.jsx
+│   ├── PeopleList.jsx
+│   │
+│   ├── ui/
+│   │   ├── Button.jsx
+│   │   └── Card.jsx
+│   │
+│   ├── UserForm.module.css
+│   ├── PeopleList.module.css
+│   ├── Button.module.css
+│   └── Card.module.css
+│
+├── App.js
+├── index.js
+└── index.css
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Functionality
 
-### `npm run build`
+### Add User
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application allows users to add a new person by entering:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Name
+* Age
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Before adding a user, the application validates:
 
-### `npm run eject`
+* Name must not be empty
+* Age must not be empty
+* Age must be a positive number
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### User List
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+All added users are displayed in a dynamic list.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Each user record contains:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Name
+* Age
 
-## Learn More
+### Delete User
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Users can be removed from the list.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To prevent accidental deletion, the application displays a confirmation dialog before removing a user.
 
-### Code Splitting
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Clone the repository:
 
-### Analyzing the Bundle Size
+```bash
+git clone https://github.com/your-username/user-management-app.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Navigate to the project directory:
 
-### Making a Progressive Web App
+```bash
+cd user-management-app
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Install dependencies:
 
-### Advanced Configuration
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Run the application:
 
-### Deployment
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Open in browser:
 
-### `npm run build` fails to minify
+```text
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Concepts Demonstrated
+
+This project demonstrates:
+
+* React Components
+* Props
+* State Management with useState
+* Controlled Components
+* Form Validation
+* Conditional Rendering
+* Event Handling
+* Dynamic Lists
+* CSS Modules
+* Reusable UI Elements
+
+## Screenshots
+
+Add screenshots of:
+
+1. User creation form
+2. User list
+3. Delete confirmation modal
+
+Example:
+
+```md
+![User Form](screenshots/form.png)
+![User List](screenshots/list.png)
+![Confirmation Dialog](screenshots/modal.png)
+```
+
+## Future Improvements
+
+* Edit user information
+* Search users
+* Sort users by age or name
+* Persistent storage using Local Storage
+* Backend integration
+* Authentication system
+* Pagination for large datasets
+
+## Educational Purpose
+
+This project was created to practice React fundamentals, including state management, form handling, validation, component communication, and reusable UI development.
